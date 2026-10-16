@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Responsive
+   Breakpoints: 1024 (tablet horizontal) · 768 (tablet) · 480 (celular)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .hero__title { font-size: 80px; }
+  .gallery--four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .detail__head { grid-template-columns: minmax(0, 1fr); gap: var(--space-4); }
+  .detail__title { font-size: 56px; }
+  .work-head__title { font-size: 56px; }
+  .cta__inner { flex-direction: column; align-items: flex-start; gap: var(--space-5); }
+}
+
+@media (max-width: 768px) {
+  :root { --container-padding: 24px; --header-height: 64px; }
+  .hero { padding-top: var(--space-7); }
+  .hero { text-align: center; }
+  /* No celular as fotos ficam no lugar do "de": "Projetos de / (fotos) outro / universo." */
+  .hero__team--desktop { display: none; }
+  .hero__team--mobile { display: inline-flex; }
+  .hero__break { display: inline; }
+  .hero__title { font-size: 48px; }
+  .hero__meta { grid-template-columns: minmax(0, 1fr); gap: var(--space-2); margin-top: var(--space-6); }
+  .hero__meta > *,
+  .hero__meta > :nth-child(2),
+  .hero__meta .hero__cta { justify-self: center; text-align: center; }
+  .hero + .photos { padding-top: var(--space-7); }
+  .photos__panel { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: 240px 240px 200px 200px; grid-template-areas: "d d" "a c" "b c" "e f"; }
+  .section { padding-top: var(--space-9); }
+  .section__title { font-size: 32px; margin-bottom: var(--space-6); }
+  .projects { grid-template-columns: minmax(0, 1fr); gap: var(--space-6); }
+  .project--wide .project__frame { aspect-ratio: 6 / 5; }
+  .project__media--trio { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project__media--trio img:nth-child(3) { display: none; }
+  .reels { margin-top: var(--space-9); }
+  .reels__head { flex-direction: column; gap: var(--space-2); }
+  .reel-row,
+  .reel-row:nth-of-type(even) { grid-template-columns: minmax(0, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+  .reel-row:nth-of-type(even) .reel-row__media { order: 0; }
+  .reel-row .reel-row__media,
+  .reel-row:nth-of-type(even) .reel-row__media,
+  .reel-row:nth-of-type(even) .reel-row__text { justify-self: start; width: min(100%, 360px); }
+  .reel-row__title { font-size: 32px; }
+  .work-head__title { font-size: 40px; }
+  .steps { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
+  .gallery--three { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .more a { grid-template-columns: minmax(0, 1fr) auto; }
+  .more .d { grid-column: 1 / -1; grid-row: 2; }
+  .detail__title { font-size: 40px; }
+  .detail__cover--screen { padding: var(--space-4); }
+  .cta__title { font-size: 40px; }
+
+  /* Barra fixa no celular: aparece depois que a abertura sai da tela */
+  .sticky-cta {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    padding: var(--space-2) var(--space-3) calc(var(--space-2) + env(safe-area-inset-bottom, 0px));
+    border-top: 1px solid var(--color-border);
+    background: rgba(7, 1, 15, 0.9);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transform: translateY(110%);
+    transition: transform 300ms var(--ease);
+  }
+  .sticky-cta .btn { width: 100%; }
+  .sticky-cta.is-visible { transform: none; }
+  body { padding-bottom: 80px; }
+}
+
+@media (max-width: 480px) {
+  .hero__title { font-size: 32px; }
+  .photos__panel { grid-template-rows: 192px 192px 160px 160px; }
+  .nav__link { font-size: 40px; }
+  /* O painel cobre a tela inteira: o símbolo escurece para aparecer sobre o fundo claro */
+  .header.menu-open .brand { color: var(--color-primary); }
+  .gallery,
+  .gallery--three,
+  .gallery--four { grid-template-columns: minmax(0, 1fr); }
+  .detail__title { font-size: 32px; }
+  .work-head__title { font-size: 32px; }
+  .figures { grid-template-columns: minmax(0, 1fr); }
+  .cta__title { font-size: 32px; }
+  .cta .btn { width: 100%; }
+}

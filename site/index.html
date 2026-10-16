@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Segurança: só arquivos do próprio site (o GitHub Pages não permite cabeçalhos próprios) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- Portfólio enviado a clientes: fora do Google -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#07010F">
+  <title>Portfólio Digital Galaxy</title>
+  <meta name="description" content="Alguns trabalhos da Digital Galaxy: anúncios, perfil do Google, sites, sistemas, marca e conteúdo para negócios locais, com os resultados de cada um.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfólio Digital Galaxy">
+  <meta property="og:description" content="Alguns trabalhos da Digital Galaxy: anúncios, perfil do Google, sites, sistemas, marca e conteúdo para negócios locais, com os resultados de cada um.">
+  <meta property="og:image" content="https://digitalgalaxy.com.br/images/og/og-digital-galaxy.jpg">
+  <link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/logo/icon-96.png" sizes="96x96" type="image/png">
+  <link rel="icon" href="images/logo/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="images/logo/apple-touch-icon.png">
+  <link rel="preload" href="fonts/sora-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/orbitron-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="stylesheet" href="css/responsive.css?v=16">
+  <script src="js/vendor/lenis.min.js?v=16" defer></script>
+  <script src="js/main.js?v=16" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ HEADER: só o símbolo e o menu ============ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Portfólio Digital Galaxy, início"><svg class="brand__mark" viewBox="92 100 265 265" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M356.00 232.50A131.5 131.5 0 1 0 93.00 232.50A131.5 131.5 0 1 0 356.00 232.50ZM307.60 315.30A117.1 77.2 45.0 1 0 142.00 149.70A117.1 77.2 45.0 1 0 307.60 315.30Z"/><path class="brand__star" d="M224.80 198.50C224.80 222.22 237.58 235.00 261.30 235.00C237.58 235.00 224.80 247.78 224.80 271.50C224.80 247.78 212.03 235.00 188.30 235.00C212.03 235.00 224.80 222.22 224.80 198.50Z" stroke="currentColor" stroke-width="16" stroke-linejoin="round"/></svg></a>
+      <button class="menu-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu lateral igual ao do site principal: desliza da direita e desfoca a página (js/main.js) -->
+  <div class="menu-overlay" aria-hidden="true"></div>
+  <nav class="nav" id="menu" aria-label="Navegação" inert>
+    <ul class="nav__list">
+      <li><a class="nav__link" href="#projetos">Projetos</a></li>
+      <li><a class="nav__link" href="#fotografia">Fotografia</a></li>
+      <li><a class="nav__link" href="#metodo">Como trabalhamos</a></li>
+      <li><a class="nav__link" href="#outros">Outros trabalhos</a></li>
+    </ul>
+    <div class="nav__footer">
+      <a class="btn btn--primary nav__cta" href="https://diagnostico.digitalgalaxy.com.br" target="_blank" rel="noopener">Diagnóstico grátis<span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </nav>
+
+  <main id="conteudo">
+
+    <!-- ============ ABERTURA (como a referência: título grande com foto no meio e linha de informações) ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 class="hero__title" id="hero-title">Projetos <span class="hero__team hero__team--desktop"><span class="hero__face" data-name="Vitor Brock | Designer"><img src="images/equipe/vitor.webp" width="320" height="320" alt="Vitor Brock, designer" fetchpriority="high"></span><span class="hero__face" data-name="Felipe dos Santos | Marketing"><img src="images/equipe/felipe.webp" width="320" height="320" alt="Felipe dos Santos, marketing" fetchpriority="high"></span></span> de<br class="hero__break"> <span class="hero__team hero__team--mobile" aria-hidden="true"><span class="hero__face" data-name="Vitor Brock | Designer"><img src="images/equipe/vitor.webp" width="320" height="320" alt=""></span><span class="hero__face" data-name="Felipe dos Santos | Marketing"><img src="images/equipe/felipe.webp" width="320" height="320" alt=""></span></span> outro universo.</h1>
+        <div class="hero__meta" data-sticky-anchor>
+          <span>Portfólio · Seleção de trabalhos</span>
+          <a href="#projetos">Role para ver os projetos ↓</a>
+          <a class="hero__cta" href="https://diagnostico.digitalgalaxy.com.br" target="_blank" rel="noopener">Diagnóstico grátis ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOTOGRAFIA: abas por cliente e mosaico de 6 fotos (js/main.js, setupPhotoTabs) ============ -->
+    <section class="section photos" id="fotografia" aria-labelledby="fotografia-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="fotografia-title">Fotografia</h2>
+        <div class="photos__tabs" role="tablist" aria-label="Fotos por cliente">
+          <button class="photos__tab" type="button" role="tab" id="aba-tm-pets" aria-controls="painel-tm-pets" aria-selected="true">T&amp;M Pets<span class="photos__timer" aria-hidden="true"></span></button>
+          <button class="photos__tab" type="button" role="tab" id="aba-grupo-axia" aria-controls="painel-grupo-axia" aria-selected="false" tabindex="-1">Grupo Axia<span class="photos__timer" aria-hidden="true"></span></button>
+          <button class="photos__tab" type="button" role="tab" id="aba-ramos-boxe" aria-controls="painel-ramos-boxe" aria-selected="false" tabindex="-1">Ramos Boxe<span class="photos__timer" aria-hidden="true"></span></button>
+        </div>
+        <div class="photos__stage">
+        <div class="photos__panel is-active" id="painel-tm-pets" role="tabpanel" aria-labelledby="aba-tm-pets">
+          <button class="shot photo photo--a" type="button" data-full="images/fotografia/tm-pets/inauguracao-01.webp" aria-label="Ver em alta resolução: Laço vermelho da inauguração da T&amp;M Pets">
+            <img src="images/fotografia/tm-pets/inauguracao-01-thumb.webp" width="960" height="640" alt="Laço vermelho da inauguração da T&amp;M Pets" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--b" type="button" data-full="images/fotografia/tm-pets/inauguracao-02.webp" aria-label="Ver em alta resolução: Prateleiras de rações na loja da T&amp;M Pets">
+            <img src="images/fotografia/tm-pets/inauguracao-02-thumb.webp" width="960" height="640" alt="Prateleiras de rações na loja da T&amp;M Pets" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--c" type="button" data-full="images/fotografia/tm-pets/inauguracao-03.webp" aria-label="Ver em alta resolução: Dona da T&amp;M Pets com uma criança no colo, servindo os convidados">
+            <img src="images/fotografia/tm-pets/inauguracao-03-thumb.webp" width="640" height="960" alt="Dona da T&amp;M Pets com uma criança no colo, servindo os convidados" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--d" type="button" data-full="images/fotografia/tm-pets/inauguracao-04.webp" aria-label="Ver em alta resolução: Convidados circulando pela loja no dia da inauguração">
+            <img src="images/fotografia/tm-pets/inauguracao-04-thumb.webp" width="960" height="640" alt="Convidados circulando pela loja no dia da inauguração" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--e" type="button" data-full="images/fotografia/tm-pets/inauguracao-05.webp" aria-label="Ver em alta resolução: Brinde com espumante no balcão da loja">
+            <img src="images/fotografia/tm-pets/inauguracao-05-thumb.webp" width="640" height="960" alt="Brinde com espumante no balcão da loja" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--f" type="button" data-full="images/fotografia/tm-pets/inauguracao-06.webp" aria-label="Ver em alta resolução: Duas mulheres sorrindo com uma criança na porta da loja">
+            <img src="images/fotografia/tm-pets/inauguracao-06-thumb.webp" width="640" height="960" alt="Duas mulheres sorrindo com uma criança na porta da loja" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+        </div>
+        <div class="photos__panel" id="painel-grupo-axia" role="tabpanel" aria-labelledby="aba-grupo-axia" hidden>
+          <button class="shot photo photo--a" type="button" data-full="images/fotografia/grupo-axia/axia-01.webp" aria-label="Ver em alta resolução: Retrato de um sócio do Grupo Axia">
+            <img src="images/fotografia/grupo-axia/axia-01-thumb.webp" width="960" height="539" alt="Retrato de um sócio do Grupo Axia" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--b" type="button" data-full="images/fotografia/grupo-axia/axia-02.webp" aria-label="Ver em alta resolução: Dois sócios do Grupo Axia conversando no programa Talk{entre}">
+            <img src="images/fotografia/grupo-axia/axia-02-thumb.webp" width="960" height="640" alt="Dois sócios do Grupo Axia conversando no programa Talk{entre}" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--c" type="button" data-full="images/fotografia/grupo-axia/axia-03.webp" aria-label="Ver em alta resolução: Os sócios do Grupo Axia com a apresentadora do Talk{entre}">
+            <img src="images/fotografia/grupo-axia/axia-03-thumb.webp" width="640" height="960" alt="Os sócios do Grupo Axia com a apresentadora do Talk{entre}" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--d" type="button" data-full="images/fotografia/grupo-axia/axia-04.webp" aria-label="Ver em alta resolução: Equipe do Grupo Axia reunida no escritório">
+            <img src="images/fotografia/grupo-axia/axia-04-thumb.webp" width="960" height="540" alt="Equipe do Grupo Axia reunida no escritório" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--e" type="button" data-full="images/fotografia/grupo-axia/axia-05.webp" aria-label="Ver em alta resolução: Sócio do Grupo Axia falando durante a gravação">
+            <img src="images/fotografia/grupo-axia/axia-05-thumb.webp" width="640" height="960" alt="Sócio do Grupo Axia falando durante a gravação" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--f" type="button" data-full="images/fotografia/grupo-axia/axia-06.webp" aria-label="Ver em alta resolução: Apresentadora do Talk{entre} sorrindo na poltrona">
+            <img src="images/fotografia/grupo-axia/axia-06-thumb.webp" width="640" height="960" alt="Apresentadora do Talk{entre} sorrindo na poltrona" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+        </div>
+        <div class="photos__panel" id="painel-ramos-boxe" role="tabpanel" aria-labelledby="aba-ramos-boxe" hidden>
+          <button class="shot photo photo--a" type="button" data-full="images/fotografia/ramos-boxe/boxe-01.webp" aria-label="Ver em alta resolução: Dois lutadores em guarda durante o treino">
+            <img src="images/fotografia/ramos-boxe/boxe-01-thumb.webp" width="723" height="960" alt="Dois lutadores em guarda durante o treino" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--b" type="button" data-full="images/fotografia/ramos-boxe/boxe-02.webp" aria-label="Ver em alta resolução: Lutador de luvas brancas encarando o adversário">
+            <img src="images/fotografia/ramos-boxe/boxe-02-thumb.webp" width="723" height="960" alt="Lutador de luvas brancas encarando o adversário" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--c" type="button" data-full="images/fotografia/ramos-boxe/boxe-03.webp" aria-label="Ver em alta resolução: Treino de boxe sobre o tatame azul e amarelo">
+            <img src="images/fotografia/ramos-boxe/boxe-03-thumb.webp" width="723" height="960" alt="Treino de boxe sobre o tatame azul e amarelo" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--d" type="button" data-full="images/fotografia/ramos-boxe/boxe-04.webp" aria-label="Ver em alta resolução: Treino de boxe com alunos assistindo ao fundo">
+            <img src="images/fotografia/ramos-boxe/boxe-04-thumb.webp" width="723" height="960" alt="Treino de boxe com alunos assistindo ao fundo" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--e" type="button" data-full="images/fotografia/ramos-boxe/boxe-05.webp" aria-label="Ver em alta resolução: Treino em preto e branco com luvas Green Hill">
+            <img src="images/fotografia/ramos-boxe/boxe-05-thumb.webp" width="723" height="960" alt="Treino em preto e branco com luvas Green Hill" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+          <button class="shot photo photo--f" type="button" data-full="images/fotografia/ramos-boxe/boxe-06.webp" aria-label="Ver em alta resolução: Lutador avançando sobre o adversário em preto e branco">
+            <img src="images/fotografia/ramos-boxe/boxe-06-thumb.webp" width="723" height="960" alt="Lutador avançando sobre o adversário em preto e branco" loading="lazy" decoding="async">
+            <span class="photo__zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Alta resolução</span>
+          </button>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="section" id="projetos" aria-label="Projetos">
+      <div class="container">
+        <header class="work-head">
+          <p class="work-head__lead">Anúncios, perfil do Google, sites, marca, sistemas e conteúdo para negócios que querem ser encontrados e vender mais.</p>
+          <div class="work-head__row">
+            <h2 class="work-head__title">Projetos que viram resultado</h2>
+          </div>
+        </header>
+        <div class="projects">
+        <a class="project reveal" href="projetos/santuario-pet/">
+          <div class="project__frame">
+            <div class="project__media project__media--top"><img src="images/projetos/santuario-pet/santuario-site.webp" width="900" height="1125" alt="Site do Santuário Pet Center no computador e no celular" loading="lazy" decoding="async"></div>
+            <span class="project__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Santuário Pet</h3>
+            <p class="project__subtitle">Perfil do Google e site</p>
+          </div>
+        </a>
+        <a class="project reveal" href="projetos/agropet-bichao/">
+          <div class="project__frame">
+            <div class="project__media"><img src="images/projetos/agropet-bichao/agropet-fachada.webp" width="1400" height="788" alt="Fachada da Agropet Bichão com a nova identidade visual" loading="lazy" decoding="async"></div>
+            <span class="project__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Agropet Bichão</h3>
+            <p class="project__subtitle">Marca e loja virtual</p>
+          </div>
+        </a>
+        <a class="project reveal" href="projetos/anuncios-whatsapp/">
+          <div class="project__frame">
+            <div class="project__media"><img src="images/projetos/anuncios-whatsapp/meta-ads.webp" width="1600" height="411" alt="Painel de anúncios do Instagram e Facebook com as campanhas de mensagens" loading="lazy" decoding="async"></div>
+            <span class="project__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Do anúncio à conversa</h3>
+            <p class="project__subtitle">Anúncios no Instagram, Facebook e Google</p>
+          </div>
+        </a>
+        <a class="project reveal" href="projetos/painel-de-compras/">
+          <div class="project__frame">
+            <div class="project__media project__media--left"><img src="images/projetos/painel-de-compras/saas-painel-compras.webp" width="1920" height="1080" alt="Telas do Painel de Compras" loading="lazy" decoding="async"></div>
+            <span class="project__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Painel de Compras</h3>
+            <p class="project__subtitle">Sistema sob medida</p>
+          </div>
+        </a>
+        <a class="project reveal" href="projetos/grupo-axia/">
+          <div class="project__frame">
+            <div class="project__media project__media--left"><img src="images/projetos/grupo-axia/axia-hero.webp" width="1600" height="1000" alt="Site do Grupo Axia no computador e no celular" loading="lazy" decoding="async"></div>
+            <span class="project__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Grupo Axia</h3>
+            <p class="project__subtitle">Site institucional</p>
+          </div>
+        </a>
+        <a class="project reveal" href="projetos/tm-pets/">
+          <div class="project__frame">
+            <div class="project__media"><img src="images/projetos/tm-pets/tm-pets-racoes.webp" width="1600" height="1066" alt="Prateleiras da T&amp;M Pets com rações" loading="lazy" decoding="async"></div>
+            <span class="project__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">T&amp;M Pets</h3>
+            <p class="project__subtitle">Vídeo e fotos de evento</p>
+          </div>
+        </a>
+        </div>
+        <div class="reels">
+          <header class="reels__head">
+            <h3 class="reels__title">Conteúdo para redes sociais</h3>
+            <a class="reels__link" href="projetos/conteudo/">Ver todos os vídeos e fotos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          </header>
+          <article class="reel-row reveal">
+            <div class="reel-row__media"><video muted loop playsinline preload="none" poster="images/projetos/grupo-axia/axia-historia-clientes-poster.jpg" width="540" height="960" aria-label="Vídeo: Histórias de clientes"><source src="videos/axia-historia-clientes.mp4" type="video/mp4"></video></div>
+            <div class="reel-row__text">
+              <p class="reel-row__client">Grupo Axia</p>
+              <h3 class="reel-row__title">Histórias de clientes</h3>
+              <p class="reel-row__desc">Uma série em que os próprios clientes contam como foi a experiência. Quem chega pelo Instagram vê pessoas reais falando do serviço, e isso passa mais confiança do que qualquer anúncio.</p>
+            </div>
+          </article>
+          <article class="reel-row reveal">
+            <div class="reel-row__media"><video muted loop playsinline preload="none" poster="images/projetos/santuario-pet/santuario-hospital-poster.jpg" width="540" height="960" aria-label="Vídeo: Tour pelo hospital"><source src="videos/santuario-hospital.mp4" type="video/mp4"></video></div>
+            <div class="reel-row__text">
+              <p class="reel-row__client">Santuário Pet</p>
+              <h3 class="reel-row__title">Tour pelo hospital</h3>
+              <p class="reel-row__desc">Um passeio pela estrutura do hospital e da loja. Quem ainda não conhece vê como é por dentro antes de visitar, e chega já confiando no lugar.</p>
+            </div>
+          </article>
+          <article class="reel-row reveal">
+            <div class="reel-row__media"><video muted loop playsinline preload="none" poster="images/projetos/conteudo/reel-gastronomia-poster.jpg" width="540" height="960" aria-label="Vídeo: O dia a dia da casa"><source src="videos/reel-gastronomia.mp4" type="video/mp4"></video></div>
+            <div class="reel-row__text">
+              <p class="reel-row__client">Gastronomia</p>
+              <h3 class="reel-row__title">O dia a dia da casa</h3>
+              <p class="reel-row__desc">Ambiente, equipe e clientes gravados no ritmo do Reels. O vídeo mostra o clima do lugar e dá vontade de estar lá.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMO TRABALHAMOS ============ -->
+    <section class="section" id="metodo" aria-labelledby="metodo-title">
+      <div class="container">
+        <div class="label"><span>Como trabalhamos</span></div>
+        <h2 class="section__title" id="metodo-title">Do diagnóstico ao resultado que se repete.</h2>
+        <ol class="steps">
+          <li class="reveal"><h3>Diagnóstico</h3><p>Olhamos a presença digital do negócio: o que trava a chegada de clientes e onde está a oportunidade mais rápida.</p></li>
+          <li class="reveal"><h3>Mês teste</h3><p>O primeiro mês é sem fidelidade. A estratégia vai ao ar e você vê os primeiros números antes de assumir compromisso.</p></li>
+          <li class="reveal"><h3>Crescimento</h3><p>A partir do segundo mês, contrato de 6 meses para ajustar anúncios, conteúdo e atendimento até o resultado se repetir todo mês.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ OUTROS TRABALHOS ============ -->
+    <section class="section" id="outros" aria-labelledby="outros-title">
+      <div class="container">
+        <div class="label"><span>Outros trabalhos</span></div>
+        <h2 class="visually-hidden" id="outros-title">Outros trabalhos</h2>
+        <div class="more">
+          <a href="https://comunicadordeelite.com.br" target="_blank" rel="noopener"><span class="t">Comunicador de Elite</span><span class="d">Página de treinamentos e eventos de oratória, com WhatsApp e medição dos anúncios.</span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+          <a href="https://sobrephor.com/" target="_blank" rel="noopener"><span class="t">Sobrephor</span><span class="d">Site institucional.</span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+          <a href="https://www.behance.net/gallery/171615095/Aurea-Caf-Identidade-visual" target="_blank" rel="noopener"><span class="t">Aurea Café</span><span class="d">Identidade visual.</span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+          <a href="https://www.behance.net/gallery/246728103/Redesign-Gremio" target="_blank" rel="noopener"><span class="t">Redesign Grêmio</span><span class="d">Projeto conceitual de redesign de marca.</span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+        </div>
+        <p class="more-note">Estes são alguns exemplos. Esta página reúne só uma parte dos nossos trabalhos: mostramos os mais parecidos com o seu negócio na conversa.</p>
+      </div>
+    </section>
+
+    <!-- ============ CHAMADA FINAL ============ -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="starfield" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <div>
+          <p class="eyebrow">O próximo passo começa aqui</p>
+          <h2 class="cta__title" id="cta-title">Vamos começar?</h2>
+          <p class="cta__text">Responda 10 perguntas rápidas sobre o seu negócio e receba um diagnóstico da sua presença digital. Sem custo e sem compromisso.</p>
+          <p class="cta__note"><b>Primeiro mês sem fidelidade:</b> você vê os primeiros números antes de assumir compromisso.</p>
+        </div>
+        <a class="btn btn--primary" href="https://diagnostico.digitalgalaxy.com.br" target="_blank" rel="noopener">Fazer o diagnóstico grátis<span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <ul class="social" aria-label="Redes sociais">
+        <li><a class="social__link" href="https://wa.me/5551989970010?text=Ol%C3%A1!%20Vi%20o%20portf%C3%B3lio%20da%20Digital%20Galaxy%20e%20quero%20conversar%20sobre%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener" aria-label="WhatsApp"><span class="social__icon social__icon--whatsapp" aria-hidden="true"></span></a></li>
+        <li><a class="social__link" href="https://www.instagram.com/digitalgalaxymkt" target="_blank" rel="noopener" aria-label="Instagram @digitalgalaxymkt"><span class="social__icon social__icon--instagram" aria-hidden="true"></span></a></li>
+      </ul>
+      <p>© <span class="js-year">2026</span> Digital Galaxy. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-cta"><a class="btn btn--primary" href="https://diagnostico.digitalgalaxy.com.br" target="_blank" rel="noopener">Quero um diagnóstico grátis<span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span></a></div>
+
+  <dialog class="lightbox" aria-label="Foto ampliada">
+    <button class="lightbox__close" type="button">Fechar</button>
+    <img src="data:," alt="">
+  </dialog>
+</body>
+</html>
